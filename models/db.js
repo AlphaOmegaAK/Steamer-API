@@ -11,7 +11,7 @@ const config = {
 
 const connectDB = () => {
   mongoose.connect(connection, config)
-    .then(() => console.log("MongoDB Success"))
+    .then(() => console.log(`MongoDB Success connected to : ${connection}`))
     .catch(err => console.log(`MongoDb Failure ${err}`))
 }
 module.exports = connectDB;

@@ -13,7 +13,7 @@ connectDB();
 // app.use(cors());
 //-----Stretch----------
 
-// Body Parser
+// Body Parser ( req.body )
 // app.use(bodyParser.urlencoded({ extended: False }));
 // Json (express)
 app.use(express.json());
