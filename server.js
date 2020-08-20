@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
+const connectDB = require('./models/db');
 // const cors = require('cors');
 
 // Config
 const PORT = process.env.PORT || 4000;
+connectDB();
 
 
 
@@ -18,7 +20,7 @@ app.use(express.json());
 
 
 // Routes
-// app.use("/", require("./controllers/index"));
+app.use("/", require("./controllers/index"));
 // app.use("/auth", require("./controllers/auth"));
 // app.use("/posts", require("./controllers/posts"));
 
